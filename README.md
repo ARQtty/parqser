@@ -1,6 +1,9 @@
 # parqser
 Simple customizable scrapper and parser. Allows multithreading and proxies downloading
 
+## Install
+
+`pip3 install parqser`
 
 ## Simple example
 
