@@ -1,11 +1,3 @@
-# parqser
-Simple customizable scrapper and parser. Allows multithreading and proxies downloading
-
-
-## Simple example
-
-This code scrapes given URLs in multithread mode and writes the length of html code in it to csv
-```
 from parqser.scrapper import BatchParallelScrapper
 from parqser.parser import HTMLParser
 from parqser.saver import CSVSaver
@@ -24,7 +16,7 @@ if __name__ == '__main__':
             'https://github.com/GroupLe/grouple-face-tagger',
             'https://github.com/GroupLe/grouple-face-tagger/actions']
 
-    saver = CSVSaver('./parsed_info.csv')
+    saver = CSVSaver('../../parsed_info.csv')
     parser = HTMLParser([CodeLength()])
     scrapper = BatchParallelScrapper(n_jobs=2, interval_ms=1000)
 
@@ -36,10 +28,3 @@ if __name__ == '__main__':
         parsed = [page.to_dict() for page in parsed]
 
         saver.save_batch(parsed)
-``` 
-
-## Exmaples
-
-- launch simple exmaple like in `example/simple`
-- Authenticate to account and parqse your private data with custom sessions like in `examples/authenticated_session`
-- Subclass and define your own savers, components, scrappers, sessions and parsers
