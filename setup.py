@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='parqser',
-    version='1.0.2',
+    version='1.0.5',
     description='Finally, a good parser',
     url='https://github.com/ARQtty/parqser',
     author='Ilya Shamov',

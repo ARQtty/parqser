@@ -11,5 +11,5 @@ import session
 import web_component
 
 
-__version__ = "1.0.2"
+__version__ = "1.0.5"
 __author__ = 'Ilya Shamov'

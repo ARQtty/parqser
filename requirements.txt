@@ -1,4 +1,0 @@
-requests
-loguru
-lxml
-enum
