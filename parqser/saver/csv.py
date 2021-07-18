@@ -22,14 +22,14 @@ class CSVSaver(BaseSaver):
         """If file exists, checks if file columns matches with given columns"""
         if os.path.exists(path):
             readen_columns = open(path).readline().strip().split(sep)
-            if len(columns):
-                if columns != readen_columns:
-                    raise AttributeError(f'given columns doesnt match with columns in file {path}')
-            else:
+            if not len(columns):
                 # Use columns from file
                 columns = readen_columns
+            elif columns != readen_columns:
+                raise AttributeError(f'given columns doesnt match with columns in file {path}')
+
         else:
-            if len(columns) == 0:
+            if not len(columns):
                 logger.warning('No columns given. Csv header will be determined by first record keys')
                 columns = None
         return columns

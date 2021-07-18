@@ -2,5 +2,9 @@ from enum import Enum
 
 
 class DownloadState(Enum):
-    OK = 1
-    ERROR = 2
+    CANCELED = 0
+    CREATED = 1
+    FAILED = 2
+    RUNNING = 3
+    OK = 4
+

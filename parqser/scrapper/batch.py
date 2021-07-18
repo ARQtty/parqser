@@ -17,11 +17,11 @@ class DownloadThread(threading.Thread):
         threading.Thread.__init__(self)
 
     def _load_page(self, url: str, session: BaseSession):
-        state = DownloadState.OK
         try:
             res = session.get(url)
+            state = DownloadState.OK
         except Exception as e:
-            state = DownloadState.ERROR
+            state = DownloadState.FAILED
             logger.error(f"Unexpected {e} accured on url {url}")
             res = ""
         self.page = LoadedPage(res.text, state)
