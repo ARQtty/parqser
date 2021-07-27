@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from parqser.scrapper.download_state import DownloadState
+from .download_state import DownloadState
 
 
 class BasePage:

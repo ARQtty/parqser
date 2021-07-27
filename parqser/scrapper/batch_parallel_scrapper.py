@@ -4,7 +4,7 @@ import threading
 from time import sleep
 from loguru import logger
 from .base_scrapper import BaseScrapper
-from .download_state import DownloadState
+from parqser.page import DownloadState
 from parqser.session import BaseSession, EmptySession
 from parqser.page.loaded_page import LoadedPage
 

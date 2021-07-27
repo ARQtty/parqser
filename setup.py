@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='parqser',
-    version='1.0.5',
+    version='1.0.7',
     description='Finally, a good parser',
     url='https://github.com/ARQtty/parqser',
     author='Ilya Shamov',
@@ -11,7 +11,7 @@ setup(
     packages=['parqser'],
     install_requires=['requests',
                       'lxml',
-                      'enum'],
+                      'loguru'],
 
     classifiers=[],
 )
