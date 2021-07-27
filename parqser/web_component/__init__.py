@@ -1,1 +1,1 @@
-from .base import BaseComponent
+from .base_component import BaseComponent

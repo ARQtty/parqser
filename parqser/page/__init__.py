@@ -1,2 +1,2 @@
-from .base import BasePage
-from .page import LoadedPage
+from .base_page import BasePage
+from .loaded_page import LoadedPage

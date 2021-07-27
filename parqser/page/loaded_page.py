@@ -1,4 +1,4 @@
-from .base import BasePage
+from .base_page import BasePage
 
 
 class LoadedPage(BasePage):

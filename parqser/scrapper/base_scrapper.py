@@ -1,5 +1,5 @@
 from typing import List
-from parqser.page.page import BasePage
+from parqser.page.loaded_page import BasePage
 
 
 class BaseScrapper:

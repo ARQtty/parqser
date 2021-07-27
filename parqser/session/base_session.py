@@ -2,7 +2,7 @@ from typing import Dict, Union
 from requests import Session
 
 
-class BaseSession():
+class BaseSession:
     def __init__(self, proxies: Union[Dict[str, str], None] = None):
         self._session = Session()
         self.proxies = proxies

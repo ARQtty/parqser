@@ -1,4 +1,4 @@
-from .base import BaseSession
+from .base_session import BaseSession
 
 
 class EmptySession(BaseSession):

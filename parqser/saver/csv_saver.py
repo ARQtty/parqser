@@ -3,7 +3,7 @@ import os
 import csv
 from pathlib import Path
 from loguru import logger
-from .base import BaseSaver
+from .base_saver import BaseSaver
 
 
 class CSVSaver(BaseSaver):
