@@ -1,4 +1,4 @@
-from .base_parser import BaseParser
+from parqser.parser import BaseParser
 
 
 class HTMLParser(BaseParser):

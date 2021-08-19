@@ -3,10 +3,9 @@ from itertools import islice, chain
 import threading
 from time import sleep
 from loguru import logger
-from .base_scrapper import BaseScrapper
-from parqser.page import DownloadState
+from parqser.scrapper import BaseScrapper
+from parqser.page import DownloadState, LoadedPage
 from parqser.session import BaseSession, EmptySession
-from parqser.page.loaded_page import LoadedPage
 
 
 class DownloadThread(threading.Thread):

@@ -1,4 +1,4 @@
-from .base_session import BaseSession
+from parqser.session import BaseSession
 
 
 class EmptySession(BaseSession):

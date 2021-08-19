@@ -1,4 +1,4 @@
-from .base_page import BasePage
+from parqser.page import BasePage
 
 
 class LoadedPage(BasePage):
